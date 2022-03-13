@@ -46,7 +46,6 @@ h1, p {
 
 .form {
     background-color: #8e1515ce;
-    position: absolute;
     padding: 3% .8%;
     border-radius: 1%;
 }
@@ -64,9 +63,19 @@ input, select, textarea, button {
     font-size: inherit;
     line-height: inherit;
 }
+
 .textbox{
     margin: 0 auto 2% auto;
     padding: 0.8%;
+    color: #49505750;
+    display: block;
+    width: 100%;
+    background-color: white;
+}
+
+::placeholder{
+    color: #49505750;
+
 }
 
 button {
