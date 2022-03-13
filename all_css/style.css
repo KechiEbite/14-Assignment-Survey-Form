@@ -1,7 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
-    font-weight: 400;
     line-height: 1.4;
     color: #edd699;
     margin: 0;
@@ -15,9 +14,28 @@ body::before {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background-image: linear-gradient(130deg, rgba(161, 4, 4, 0.486), rgba(142, 21, 21, 0.459)), url(../images/fire\ girl.jpg);
+    background-image: linear-gradient(130deg, rgba(203, 32, 32, 0.274), rgba(203, 32, 32, 0.425)), url(../images/fire\ girl.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     
+}
+
+.container {
+    margin: 3% auto 0 auto;
+
+}
+
+.header {
+    padding: ;
+}
+
+.form {
+    width: 100%;
+    background-color: #8e1515ce;
+    position: absolute;
+}
+
+h1 {
+    line-height: 1.2;
 }
