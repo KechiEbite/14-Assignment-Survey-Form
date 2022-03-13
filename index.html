@@ -6,10 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myopic Concaves Survey Form</title>
     <link rel="stylesheet" href="all_css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>intresting</h1>
-    
+    <div class="long_box">
+        <div class="header">
+            <h1>Myopic Concaves Survey Form</h1>
+            <p>Thank you for taking the time to help improve my site</p>
+        </div>
+
+        <div class="form">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="textbox">
+
+            <label for="email">Email</label>
+            <input type="email" class="textbox" id="email">
+
+            <label for="age">Age</label>
+            <input type="number" class="textbox" id="age" min="10" max="99">
+
+            <p>Which best describes your favourite type of book?</p>
+            <select name="fav_bk" id="dropdown" class="textbox" required>
+                <option disabled selected value>Select your favourite type of book</option>
+                <option value="GraphicNovel">Graphic Novel</option>
+                <option value="ComicBook">Comic Book</option>
+                <option value="Dystopian">Dystopian</option>
+                <option value="Memoir">Memoir</option>
+                <option value="ChickLit">Chick Lit</option>
+                <option value="Romance">Romance</option>
+                <option value="SciFi">Sci-Fi</option>
+            </select>
+
+            <p>Would you recommend Myopic Concaves to a friend?</p>
+            <input type="radio" name="recommend" class="redio_central" value="of course" checked>Of course 
+            <input type="radio" name="recommend" class="redio_central" value="oh hell no">Oh hell NO
+            <input type="radio" name="recommend" class="redio_central" value="maybe">Maybe
+
+            <p>What is your favourite book summary on Myopic Concaves?</p>
+            <select name="bk_sum" id="dropdown" class="textbox" required>
+                <option disabled selected value>Select your fave review so far</option>
+                <option value="dune">Dune</option>
+                <option value="theSandman">The Sandman</option>
+                <option value="EyeoftheWorld">Eye of the World</option>
+                <option value="Bridgerton2">The Viscount Who Loved Me</option>
+            </select>
+
+            <p>What would you like to see improved? <span class="tip">(Check all that apply)</span></p>
+            <input type="checkbox" name="improved" value="frequency-of-articles" class="check-box">Post at least twice a week
+            <input type="checkbox" name="improved" value="more-movies" class="check-box">Do more movie reviews
+            <input type="checkbox" name="improved" value="more-tv" class="check-box">Do more TV reviews
+            <input type="checkbox" name="improved" value="focus-new-books" class="check-box">Focus on new books
+            <input type="checkbox" name="improved" value="Character-profile" class="check-box">Write about the characters
+
+            <p>Any comments or suggestions?</p>
+            <textarea name="comment" id="comments" placeholder="Enter your comment here" class="textarena"></textarea>
+
+            <button class="submit">Submit</button>
+        </div>
+    </div>
 </body>
+
 </html>
