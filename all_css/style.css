@@ -78,6 +78,12 @@ input, select, textarea, button {
 
 }
 
+.textbox:focus {
+    border-color: #8e1515ce;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(203, 32, 32, 0.363);
+  }
+
 ::placeholder{
     color: #495057;
 
@@ -91,12 +97,21 @@ input, select, textarea, button {
 }
 
 .textarena {
-    min-height: 120px;
+    min-height: 150px;
     width: 100%;
-    padding: 0.8%;
+    padding: 0.5%;
     resize: vertical;
 }
 
 button {
     border: none;
+    display: block;
+    width: 100%;
+    padding: 2%;
+    background: rgba(217,117,7);
+    color: inherit;
+    border-radius: .5%;
+    cursor: pointer;
+    margin-top: 5%;
+    margin-left: .4%;
 }
